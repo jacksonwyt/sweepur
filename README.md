@@ -27,8 +27,18 @@ It combines two local views in one terminal UI:
 - `bun`
 - `lsof`
 - `docker` if you want the Docker tab to return live data
+- macOS or Linux for the current ports implementation
 
-## Install And Run
+## Run From GitHub
+
+```bash
+git clone https://github.com/jacksonwyt/sweepur.git
+cd sweepur
+bun install
+bun run dev
+```
+
+## Published Install
 
 Try it without installing:
 
@@ -36,26 +46,18 @@ Try it without installing:
 bunx sweepur
 ```
 
-Install it globally:
+Or install it globally:
 
 ```bash
 npm install -g sweepur
 sweepur
 ```
 
-`sweepur` is a Bun-backed CLI. `npm` can install the package, but the executable still expects `bun` to be present on the machine. If you want the one-shot runner, prefer `bunx` over `npx`.
-
-## Run
-
-```bash
-bun install
-bun run dev
-```
+`sweepur` is a Bun-backed CLI. `npm` can install the package, but the executable still expects `bun` to be present on the machine. Prefer `bunx` over `npx`.
 
 ## Verify
 
 ```bash
-bun test
-bun run typecheck
+bun run check
 ```
-# sweepur
+

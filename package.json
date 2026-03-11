@@ -2,6 +2,15 @@
   "name": "sweepur",
   "version": "0.1.0",
   "description": "A small OpenTUI dashboard for sweeping local ports and Docker containers.",
+  "homepage": "https://github.com/jacksonwyt/sweepur#readme",
+  "bugs": {
+    "url": "https://github.com/jacksonwyt/sweepur/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksonwyt/sweepur.git"
+  },
+  "license": "MIT",
   "type": "module",
   "bin": {
     "sweepur": "./bin/sweepur.js"
@@ -16,7 +25,8 @@
     "start": "bun run src/index.ts",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
-    "check": "bun test && bun run typecheck"
+    "check": "bun test && bun run typecheck",
+    "prepublishOnly": "bun run check"
   },
   "keywords": [
     "tui",
@@ -28,6 +38,7 @@
   "engines": {
     "bun": ">=1.3.0"
   },
+  "packageManager": "bun@1.3.6",
   "dependencies": {
     "@opentui/core": "0.1.87"
   },
