@@ -52,15 +52,6 @@ bun install
 bun run dev
 ```
 
-## Publish Notes
-
-Before publishing to npm, make sure:
-
-- the package name is available
-- the version is correct
-- `bun run check` passes
-- you publish from an environment with Bun installed
-
 ## Verify
 
 ```bash

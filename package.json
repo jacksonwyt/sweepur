@@ -1,0 +1,38 @@
+{
+  "name": "sweepur",
+  "version": "0.1.0",
+  "description": "A small OpenTUI dashboard for sweeping local ports and Docker containers.",
+  "type": "module",
+  "bin": {
+    "sweepur": "./bin/sweepur.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "check": "bun test && bun run typecheck"
+  },
+  "keywords": [
+    "tui",
+    "cli",
+    "opentui",
+    "docker",
+    "ports"
+  ],
+  "engines": {
+    "bun": ">=1.3.0"
+  },
+  "dependencies": {
+    "@opentui/core": "0.1.87"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.8.2"
+  }
+}
